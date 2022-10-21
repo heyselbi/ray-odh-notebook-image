@@ -1,0 +1,42 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+ray = { version = "==2.0.0", extras = [ "default", "serve","tune","train","data"] }
+tune_sklearn = "*"
+flatbuffers = "*"
+dataclasses = "*"
+codeflare = "*"
+lale = "*"
+scikit-learn = "*"
+dask = {version = "==2021.2.0", extras = ["array", "dataframe"]}
+toolz = "*"
+pandas = "*"
+scipy = "*"
+xgboost = "*"
+xgboost-ray = "*"
+Cython = "*"
+packaging = "*"
+memory_profiler = "*"
+torch = "*"
+torchvision = "*"
+ipywidgets = ">=7.5.0"
+boto3 = "==1.17.11"
+jupyterlab-git = "==0.30.0"
+jupyterlab-s3-browser = "==0.10.1"
+matplotlib = "*"
+s3fs = "==0.3.4"
+openshift-client = "*"
+python-dotenv = "*"
+pydot = "*"
+gputil = "*" 
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true

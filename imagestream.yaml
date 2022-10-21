@@ -1,0 +1,21 @@
+kind: ImageStream
+apiVersion: image.openshift.io/v1
+metadata:
+  name: ray-notebook
+  labels:
+    opendatahub.io/notebook-image: 'true'
+  annotations:
+    opendatahub.io/notebook-image-name:
+      "Ray Notebook"
+spec:
+  lookupPolicy:
+    local: true
+  tags:
+    - annotations:
+        openshift.io/imported-from: quay.io/michaelclifford/ray-odh-notebook
+      name: stable
+      from:
+        kind: DockerImage
+        name: 'quay.io/michaelclifford/ray-odh-notebook:stable'
+      importPolicy:
+        scheduled: true
