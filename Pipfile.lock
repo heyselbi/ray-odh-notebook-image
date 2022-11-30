@@ -2312,7 +2312,7 @@
                 "sha256:efc3197e1e101f1cd3f7176f1593aa54a2ce404b417a01ff4725c004d975950f"
             ],
             "index": "pypi",
-            "version": "==2.0.0"
+            "version": "==1.12.1"
         },
         "requests": {
             "hashes": [
