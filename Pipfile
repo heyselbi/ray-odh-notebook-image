@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-ray = { version = "==2.0.0", extras = [ "default", "serve","tune","train","data"] }
+ray = { version = "==1.12.1", extras = [ "default", "serve","tune","train","data"] }
 tune_sklearn = "*"
 flatbuffers = "*"
 dataclasses = "*"
